@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,7 +19,15 @@ public class Main {
                 .filter(user -> user.getAge()>18 )
                 .filter(user -> user.getUsername().startsWith("R") )
                 .count();
-         System.out.println(contador);
+         //System.out.println(contador);
 
+        Stream<User> stream = users.stream();
+        System.out.println( stream.filter(user ->
+                user.getAge()>18).count() );
+        //obtener todos los usuarios q tengan una edad mayor a 18
+       List<User> newUsers = users.stream()
+                .filter(user -> user.getAge()>18)
+                .collect(Collectors.toList());
+        System.out.println(newUsers);
     }
 }
