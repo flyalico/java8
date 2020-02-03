@@ -8,7 +8,7 @@ public class Sorted {
         List<Integer> numbers = List.of(1,4,6,8,9,2,4,6,7,8,10,1,2,3);
         List<Integer> result = numbers.stream().sorted().collect(Collectors.toList());
        // System.out.println(result);
-
+        System.out.println("probando");
         List<Book> books = new ArrayList<>();
         books.add(new Book("El señor de los anillos", 150));
         books.add(new Book("Don Quijote de la mancha",500));
