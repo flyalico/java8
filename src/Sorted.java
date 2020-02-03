@@ -19,8 +19,9 @@ public class Sorted {
         Comparator<Book> comparatorTitle = Comparator.comparing(book -> book.getTitle());
 
         books.stream()
-                .sorted(comparatorTitle)
+                .sorted(comparatorTitle.reversed())
                 .limit(3)
+                .skip(1)
                 .forEach(book -> System.out.println(book.getTitle()+" "+book.getCopies()) );
     }
 }
