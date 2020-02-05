@@ -15,6 +15,7 @@ public class Sorted {
         books.add(new Book("Historia de dos ciudades",200));
         books.add(new Book("El hobbit",100));
         books.add(new Book("El principito",140));
+        books.add(new Book("Spring boot", 75));
         Comparator<Book> comparatorCopies = Comparator.comparing(book -> book.getCopies() );
         Comparator<Book> comparatorTitle = Comparator.comparing(book -> book.getTitle());
 
