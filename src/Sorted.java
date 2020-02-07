@@ -16,13 +16,14 @@ public class Sorted {
         books.add(new Book("El hobbit",100));
         books.add(new Book("El principito",140));
         books.add(new Book("Spring boot", 75));
+        books.add(new Book("docker", 50));
         Comparator<Book> comparatorCopies = Comparator.comparing(book -> book.getCopies() );
         Comparator<Book> comparatorTitle = Comparator.comparing(book -> book.getTitle());
 
         books.stream()
-                .sorted(comparatorTitle.reversed())
+                .sorted(comparatorCopies.reversed())
                 .limit(3)
-                .skip(1)
+                //.skip(1)
                 .forEach(book -> System.out.println(book.getTitle()+" "+book.getCopies()) );
     }
 }
