@@ -18,6 +18,7 @@ public class Sorted {
         books.add(new Book("Spring boot", 75));
         books.add(new Book("docker", 50));
         books.add(new Book("microservicios", 50));
+        books.add(new Book("react", 50));
         Comparator<Book> comparatorCopies = Comparator.comparing(book -> book.getCopies() );
         Comparator<Book> comparatorTitle = Comparator.comparing(book -> book.getTitle());
 
