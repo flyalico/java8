@@ -26,6 +26,7 @@ public class Sorted {
 		books.add(new Book("rabitmq", 95));
 		books.add(new Book("activemq", 85));
 		books.add(new Book("bitbucket", 85));
+		books.add(new Book("kubernetes", 85));
         Comparator<Book> comparatorCopies = Comparator.comparing(book -> book.getCopies() );
         Comparator<Book> comparatorTitle = Comparator.comparing(book -> book.getTitle());
 
