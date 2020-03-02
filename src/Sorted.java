@@ -21,8 +21,7 @@ public class Sorted {
         books.add(new Book("react", 50));
         books.add(new Book("vuejs", 50));
         books.add(new Book("angular", 50));
-		books.add(new Book("jenkins", 75));
-		books.add(new Book("github", 85)); 
+		  
         Comparator<Book> comparatorCopies = Comparator.comparing(book -> book.getCopies() );
         Comparator<Book> comparatorTitle = Comparator.comparing(book -> book.getTitle());
 
