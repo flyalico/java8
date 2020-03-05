@@ -15,8 +15,7 @@ public class Sorted {
         books.add(new Book("Historia de dos ciudades",200));
         books.add(new Book("El hobbit",100));
         books.add(new Book("El principito",140));
-        books.add(new Book("Spring boot", 75));
-        books.add(new Book("docker", 50));
+         
          
         
 		  
