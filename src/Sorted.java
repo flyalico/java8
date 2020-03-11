@@ -14,8 +14,8 @@ public class Sorted {
         books.add(new Book("Don Quijote de la mancha",500));
         books.add(new Book("Historia de dos ciudades",200));
         books.add(new Book("El hobbit",100));
-        books.add(new Book("El hombre invisible",100));
-         
+        books.add(new Book("cafarnaun",100));
+         books.add(new Book("kubernetes",100));
          
         
 		  
