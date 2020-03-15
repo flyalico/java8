@@ -17,7 +17,7 @@ public class Sorted {
         books.add(new Book("cafarnaun",100));
          books.add(new Book("kubernetes",100));
         books.add(new Book("docker",100)); 
-        
+        books.add(new Book("microservicios",100)); 
 		  
         Comparator<Book> comparatorCopies = Comparator.comparing(book -> book.getCopies() );
         Comparator<Book> comparatorTitle = Comparator.comparing(book -> book.getTitle());
