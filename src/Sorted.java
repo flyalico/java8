@@ -19,7 +19,7 @@ public class Sorted {
         books.add(new Book("docker",100)); 
         books.add(new Book("microservicios",100)); 
 		 books.add(new Book("spring cloud",100));  
-		 books.add(new Book("spring boot",100));
+		  
 		  
 		  
 		  
